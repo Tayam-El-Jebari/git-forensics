@@ -28,7 +28,7 @@ description: 'Run scan_repo.py (git-forensics red-flag scanner) against one or m
 
 ### 1. Run the scan
 
-Use `scan_repo.py` in this repo's root. Write reports to `results/<repo>/` for one repo or `results/` for several (never commit them). Do not redirect or pipe the output.
+Always run the bundled script; do not reimplement its checks with ad-hoc git commands. It is `scan_repo.py` in this repo's root (three levels up from this SKILL.md: `../../../scan_repo.py`). Write reports to `results/<repo>/` for one repo or `results/` for several (never commit them). Do not redirect or pipe the output.
 
 ```sh
 python3 scan_repo.py <target> [<target> ...] --keep --out results/<repo>   # Windows: py scan_repo.py ...
